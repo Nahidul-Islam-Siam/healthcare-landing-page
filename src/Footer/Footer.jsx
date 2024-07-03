@@ -2,47 +2,49 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa6"
 
 const Footer = () => {
     return (
-        <div className="">
-           <footer className="footer bg-[#020043] text-[#FFFFF5] p-16">
-<nav>
-<aside>
-  <img src="./logo light.png" className="h-8" alt="Flowbite Logo" />
-    <p>
-    123 Main Street Anytown, USA <br />
-    Postal Code: 12345</p>
-     <p> Support: support@oyolloo.com <br />
-(Available : 10:00am to 07:00pm)</p>
-    
-  </aside>
-</nav>
-  <nav>
-   
-    <a className="link link-hover">Home</a>
-    <a className="link link-hover">About Us</a>
-    <a className="link link-hover">Success Page</a>
-    <a className="link link-hover">Terms And Condition</a>
-  </nav>
-  <nav>
-    
-    <a className="link link-hover">Services</a>
-    <a className="link link-hover">Scheduling</a>
-    <a className="link link-hover">Contact Us</a>
-    <a className="link link-hover">Patient Portal</a>
-  </nav>
-  <nav>
-    <h6 className="footer-title">Follow Us</h6>
-    <div className="grid grid-flow-col gap-4">
-      <FaFacebook size={26}/>
-      <FaInstagram size={26}/>
-      <FaLinkedin size={26}/>
-      <FaYoutube size={26}/>
-      
-    </div>
-    <br />
-    <a className="link link-hover">Patient Portal</a>
-  </nav>
-</footer> 
-        </div>
+        <footer className="bg-[#020043] text-[#FFFFF5] p-16">
+            <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div className="text-center md:text-left mb-4 md:mb-0">
+                    <img src="./logo light.png" className="h-12 mb-4 mx-auto md:mx-0" alt="Flowbite Logo" />
+                </div>
+                <div className="text-center md:text-left">
+                    <p className="font-medium">123 Main Street Anytown, USA</p>
+                    <p className="font-medium">Postal Code: 12345</p>
+                    <p className="mt-2">Support: <a href="mailto:support@oyolloo.com" className="underline">support@oyolloo.com</a></p>
+                    <p>(Available : 10:00am to 07:00pm)</p>
+                </div>
+                <div className="text-center md:text-left">
+                    <h6 className="font-semibold mb-2">Quick Links</h6>
+                    <ul>
+                        <li><a className="link link-hover font-light" href="#">Home</a></li>
+                        <li><a className="link link-hover font-light" href="#">About Us</a></li>
+                        <li><a className="link link-hover font-light" href="#">Success Page</a></li>
+                        <li><a className="link link-hover font-light" href="#">Terms And Conditions</a></li>
+                    </ul>
+                </div>
+                <div className="text-center md:text-left">
+                    <h6 className="font-semibold mb-2">Services</h6>
+                    <ul>
+                        <li><a className="link link-hover font-light" href="#">Services</a></li>
+                        <li><a className="link link-hover font-light" href="#">Scheduling</a></li>
+                        <li><a className="link link-hover font-light" href="#">Contact Us</a></li>
+                        <li><a className="link link-hover font-light" href="#">Patient Portal</a></li>
+                    </ul>
+                </div>
+                <div className="text-center md:text-left">
+                    <h6 className="font-semibold mb-2">Follow Us</h6>
+                    <div className="flex justify-center md:justify-start space-x-4">
+                        <a href="https://facebook.com" aria-label="Facebook" className="hover:text-gray-400"><FaFacebook size={26} /></a>
+                        <a href="https://instagram.com" aria-label="Instagram" className="hover:text-gray-400"><FaInstagram size={26} /></a>
+                        <a href="https://linkedin.com" aria-label="LinkedIn" className="hover:text-gray-400"><FaLinkedin size={26} /></a>
+                        <a href="https://youtube.com" aria-label="YouTube" className="hover:text-gray-400"><FaYoutube size={26} /></a>
+                    </div>
+                </div>
+            </div>
+            <div className="text-center mt-8">
+                <p>&copy; {new Date().getFullYear()} Oyolloo. All rights reserved.</p>
+            </div>
+        </footer>
     );
 };
 

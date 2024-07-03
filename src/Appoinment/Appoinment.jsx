@@ -12,15 +12,13 @@ const Appointment = () => {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
-
       }}
-      className="bg-gradient-to-r from-orange-400 via-red-500 to-pink-50"
+      className="rounded-lg"
     >
-      <div className="flex justify-end items-center  p-4">
+      <div className="flex justify-end items-center p-4">
         <img src="./logo light.png" alt="Logo" className="h-10 mr-4" />
-
       </div>
-      <div className="flex flex-grow items-center p-8  ">
+      <div className="flex flex-grow items-center p-8">
         <div className="flex flex-col items-start text-white">
           <h1 className="text-5xl font-bold">
             Get Your <br /> First Appointment <br /> at 50% Off!
