@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'radial-custom': 'radial-gradient(circle, #020043 100%, #0200434D 30%)',
+      },
+    },
   },
   plugins: [
     require('daisyui'),

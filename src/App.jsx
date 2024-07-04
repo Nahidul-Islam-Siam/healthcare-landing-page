@@ -29,7 +29,7 @@ function App() {
 <Services></Services>
 <Testimonials></Testimonials>
 <Faq></Faq>
-<Appoinment></Appoinment>
+<div className="mb-8 mt-8"><Appoinment></Appoinment></div>
 
   </div>
     <Footer></Footer>
