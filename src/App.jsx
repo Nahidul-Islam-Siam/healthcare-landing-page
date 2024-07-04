@@ -20,16 +20,16 @@ function App() {
     <div className=" ">
     {/* navbar */}
 
-  <div className="mx-auto container overflow-hidden">
+  <div className="mx-auto container overflow-hidden inter">
   <Nav></Nav>
 
 <Hero></Hero>
-<Graph></Graph>
-<AboutUs></AboutUs>
-<Services></Services>
+<div className="mb-10 mt-8"><Graph></Graph></div>
+<div className="mb-10 mt-8"><AboutUs></AboutUs></div>
+<div className="mb-10 mt-8"><Services></Services></div>
 <Testimonials></Testimonials>
 <Faq></Faq>
-<div className="mb-8 mt-8"><Appoinment></Appoinment></div>
+<div className="mb-10 mt-8"><Appoinment></Appoinment></div>
 
   </div>
     <Footer></Footer>
